@@ -20,80 +20,32 @@
             <h3>Reach 5 points to win!</h3>
         </div>
         <div class="container" id="playChoices">
-            <span class="option" id="Rock">✊</span>
-            <span class="option" id="Paper">🖐️</span>
-            <span class="option" id="Scissors">✌️</span>
+            <span class="option" id="Rock">&#x270A;</span>
+            <span class="option" id="Paper">&#x1F590;</span>
+            <span class="option" id="Scissors">&#x270C;</span>
         </div>
         <div class="container" id="gameInfo">
-            <div class="ownMove">
-                <span class="currentMove">❓</span>
+            <div>
+                <span id="ownMove" class="currentMove">&#x2753;</span>
             </div>
             <div class="scoreBoard">
                 <h1 id="score">0 - 0</h1>
-                <div class="lastRoundInfo">
-                    <div id="roundResult">You Lost!</div>
-                    <div id="resultCause">Scissors beats Paper</div>
+                <div>
+                    <div id="roundResult" class="hidden">You Lost!</div>
+                    <div id="resultCause" class="hidden">Scissors beats Paper</div>
                 </div>
             </div>
-            <div class="restart">
+            <div id ="restart" class="hidden">
                 <h2 id="endGameMsg">You Lost!</h2>
-                <button>Play Again!</button>
+                <button id="playAgain">Play Again!</button>
             </div>
-            <div class="botMove">
-                <span class="currentMove">❓</span>
+            <div >
+                <span id="botMove" class="currentMove">&#x2753;</span>
             </div>
         </div>
         <div id="history">
             <h2>Your Rounds:</h2>
             <div id="historyRounds">
-                <div class="historyRound wonRound">
-                    <h3 >Round #3</h3>
-                    <div class="roundInfo">
-                        <div class="historyOwnPlay">
-                            <h6>Your Move</h6>
-                            <span class="move">🖐️</span>
-                        </div>
-                        <div class="roundScore">
-                            1 - 1
-                        </div>
-                        <div class="historyBotPlay">
-                            <h6>Bot's Move</h6>
-                            <span class="move">✊</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="historyRound lostRound">
-                    <h3>Round #2</h3>
-                    <div class="roundInfo">
-                        <div class="historyOwnPlay">
-                            <h6>Your Move</h6>
-                            <span class="move">✊</span>
-                        </div>
-                        <div class="roundScore">
-                            0 - 1
-                        </div>
-                        <div class="historyBotPlay">
-                            <h6>Bot's Move</h6>
-                            <span class="move">🖐️</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="historyRound tiedRound">
-                    <h3>Round #1</h3>
-                    <div class="roundInfo">
-                        <div class="historyOwnPlay">
-                            <h6>Your Move</h6>
-                            <span class="move">🖐️</span>
-                        </div>
-                        <div class="roundScore">
-                            0 - 0
-                        </div>
-                        <div class="historyBotPlay">
-                            <h6>Bot's Move</h6>
-                            <span class="move">🖐️</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
