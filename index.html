@@ -7,7 +7,98 @@
     <title>Rock-Paper-Scissors</title>
     <link rel="stylesheet" href="./style/style.css">
     <script src="./scripts/script.js" defer></script>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class="mainContent">
+        <div class="title">
+            <h1>Rock Paper Scissors</h1>
+            <h3>Reach 5 points to win!</h3>
+        </div>
+        <div class="container" id="playChoices">
+            <span class="option" id="Rock">✊</span>
+            <span class="option" id="Paper">🖐️</span>
+            <span class="option" id="Scissors">✌️</span>
+        </div>
+        <div class="container" id="gameInfo">
+            <div class="ownMove">
+                <span class="currentMove">❓</span>
+            </div>
+            <div class="scoreBoard">
+                <h1 id="score">0 - 0</h1>
+                <div class="lastRoundInfo">
+                    <div id="roundResult">You Lost!</div>
+                    <div id="resultCause">Scissors beats Paper</div>
+                </div>
+            </div>
+            <div class="restart">
+                <h2 id="endGameMsg">You Lost!</h2>
+                <button>Play Again!</button>
+            </div>
+            <div class="botMove">
+                <span class="currentMove">❓</span>
+            </div>
+        </div>
+        <div id="history">
+            <h2>Your Rounds:</h2>
+            <div id="historyRounds">
+                <div class="historyRound wonRound">
+                    <h3 >Round #3</h3>
+                    <div class="roundInfo">
+                        <div class="historyOwnPlay">
+                            <h6>Your Move</h6>
+                            <span class="move">🖐️</span>
+                        </div>
+                        <div class="roundScore">
+                            1 - 1
+                        </div>
+                        <div class="historyBotPlay">
+                            <h6>Bot's Move</h6>
+                            <span class="move">✊</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="historyRound lostRound">
+                    <h3>Round #2</h3>
+                    <div class="roundInfo">
+                        <div class="historyOwnPlay">
+                            <h6>Your Move</h6>
+                            <span class="move">✊</span>
+                        </div>
+                        <div class="roundScore">
+                            0 - 1
+                        </div>
+                        <div class="historyBotPlay">
+                            <h6>Bot's Move</h6>
+                            <span class="move">🖐️</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="historyRound tiedRound">
+                    <h3>Round #1</h3>
+                    <div class="roundInfo">
+                        <div class="historyOwnPlay">
+                            <h6>Your Move</h6>
+                            <span class="move">🖐️</span>
+                        </div>
+                        <div class="roundScore">
+                            0 - 0
+                        </div>
+                        <div class="historyBotPlay">
+                            <h6>Bot's Move</h6>
+                            <span class="move">🖐️</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Made by nklpsl
+    </footer>
 </body>
 </html>
